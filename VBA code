@@ -1,0 +1,242 @@
+Option Explicit
+
+Sub Generate_FDA_product_identifier()
+'
+' Generate_FDA_product_identifier Macro
+' Creating FDA NDC drug code
+'
+
+'
+    Range("J3").Select
+    ActiveCell.FormulaR1C1 = _
+        "=IF(RC4 <> """",RC3 & ""-"" & INDEX(R7C20:R1004C20, MATCH(RC4, R7C19:R1004C19,0)) & ""-"" & RC5,"""")"
+    Range("J3").Select
+    Selection.FillDown
+    ActiveWindow.ScrollRow = 460
+    ActiveWindow.ScrollRow = 376
+    ActiveWindow.ScrollRow = 332
+    ActiveWindow.ScrollRow = 314
+    ActiveWindow.ScrollRow = 308
+    ActiveWindow.ScrollRow = 303
+    ActiveWindow.ScrollRow = 293
+    ActiveWindow.ScrollRow = 259
+    ActiveWindow.ScrollRow = 249
+    ActiveWindow.ScrollRow = 244
+    ActiveWindow.ScrollRow = 224
+    ActiveWindow.ScrollRow = 220
+    ActiveWindow.ScrollRow = 211
+    ActiveWindow.ScrollRow = 206
+    ActiveWindow.ScrollRow = 194
+    ActiveWindow.ScrollRow = 188
+    ActiveWindow.ScrollRow = 138
+    ActiveWindow.ScrollRow = 132
+    ActiveWindow.ScrollRow = 54
+    ActiveWindow.ScrollRow = 37
+    ActiveWindow.ScrollRow = 28
+    ActiveWindow.ScrollRow = 6
+    ActiveWindow.ScrollRow = 1
+    Range("K3").Select
+    ActiveCell.FormulaR1C1 = _
+        "=IF(RC10 <> """", COUNTIF(R3C10:RC[-1],RC10)+R3C13, """")"
+    Range("K3").Select
+    Selection.FillDown
+    ActiveWindow.ScrollRow = 1091
+    ActiveWindow.ScrollRow = 1088
+    ActiveWindow.ScrollRow = 1085
+    ActiveWindow.ScrollRow = 1069
+    ActiveWindow.ScrollRow = 1060
+    ActiveWindow.ScrollRow = 1052
+    ActiveWindow.ScrollRow = 1043
+    ActiveWindow.ScrollRow = 1032
+    ActiveWindow.ScrollRow = 1022
+    ActiveWindow.ScrollRow = 1011
+    ActiveWindow.ScrollRow = 999
+    ActiveWindow.ScrollRow = 943
+    ActiveWindow.ScrollRow = 877
+    ActiveWindow.ScrollRow = 785
+    ActiveWindow.ScrollRow = 738
+    ActiveWindow.ScrollRow = 722
+    ActiveWindow.ScrollRow = 572
+    ActiveWindow.ScrollRow = 484
+    ActiveWindow.ScrollRow = 451
+    ActiveWindow.ScrollRow = 370
+    ActiveWindow.ScrollRow = 318
+    ActiveWindow.ScrollRow = 303
+    ActiveWindow.ScrollRow = 288
+    ActiveWindow.ScrollRow = 247
+    ActiveWindow.ScrollRow = 235
+    ActiveWindow.ScrollRow = 223
+    ActiveWindow.ScrollRow = 209
+    ActiveWindow.ScrollRow = 185
+    ActiveWindow.ScrollRow = 136
+    ActiveWindow.ScrollRow = 62
+    ActiveWindow.ScrollRow = 42
+    ActiveWindow.ScrollRow = 36
+    ActiveWindow.ScrollRow = 28
+    ActiveWindow.ScrollRow = 9
+    ActiveWindow.ScrollRow = 4
+    ActiveWindow.ScrollRow = 1
+    Range("I3").Select
+    ActiveCell.FormulaR1C1 = "=IF(RC2 <> """", SUBSTITUTE(RC2, ""-"", """"), """")"
+    Range("I3").Select
+    Selection.FillDown
+    ActiveWindow.ScrollRow = 1091
+    ActiveWindow.ScrollRow = 1090
+    ActiveWindow.ScrollRow = 1088
+    ActiveWindow.ScrollRow = 1085
+    ActiveWindow.ScrollRow = 1082
+    ActiveWindow.ScrollRow = 1079
+    ActiveWindow.ScrollRow = 1075
+    ActiveWindow.ScrollRow = 1070
+    ActiveWindow.ScrollRow = 1063
+    ActiveWindow.ScrollRow = 1058
+    ActiveWindow.ScrollRow = 1052
+    ActiveWindow.ScrollRow = 1037
+    ActiveWindow.ScrollRow = 1032
+    ActiveWindow.ScrollRow = 1026
+    ActiveWindow.ScrollRow = 1023
+    ActiveWindow.ScrollRow = 1017
+    ActiveWindow.ScrollRow = 1011
+    ActiveWindow.ScrollRow = 1003
+    ActiveWindow.ScrollRow = 950
+    ActiveWindow.ScrollRow = 935
+    ActiveWindow.ScrollRow = 880
+    ActiveWindow.ScrollRow = 817
+    ActiveWindow.ScrollRow = 791
+    ActiveWindow.ScrollRow = 782
+    ActiveWindow.ScrollRow = 742
+    ActiveWindow.ScrollRow = 719
+    ActiveWindow.ScrollRow = 575
+    ActiveWindow.ScrollRow = 482
+    ActiveWindow.ScrollRow = 461
+    ActiveWindow.ScrollRow = 375
+    ActiveWindow.ScrollRow = 331
+    ActiveWindow.ScrollRow = 315
+    ActiveWindow.ScrollRow = 309
+    ActiveWindow.ScrollRow = 303
+    ActiveWindow.ScrollRow = 296
+    ActiveWindow.ScrollRow = 258
+    ActiveWindow.ScrollRow = 242
+    ActiveWindow.ScrollRow = 212
+    ActiveWindow.ScrollRow = 209
+    ActiveWindow.ScrollRow = 205
+    ActiveWindow.ScrollRow = 197
+    ActiveWindow.ScrollRow = 194
+    ActiveWindow.ScrollRow = 189
+    ActiveWindow.ScrollRow = 139
+    ActiveWindow.ScrollRow = 130
+    ActiveWindow.ScrollRow = 69
+    ActiveWindow.ScrollRow = 65
+    ActiveWindow.ScrollRow = 42
+    ActiveWindow.ScrollRow = 40
+    ActiveWindow.ScrollRow = 28
+    ActiveWindow.ScrollRow = 9
+    ActiveWindow.ScrollRow = 7
+    ActiveWindow.ScrollRow = 4
+    ActiveWindow.ScrollRow = 3
+    ActiveWindow.ScrollRow = 1
+    ActiveWindow.SmallScroll ToRight:=-2
+    Range("A3").Select
+    ActiveCell.FormulaR1C1 = _
+        "=IF(RC2 <> """", SUBTOTAL(3,R3C2:RC[1]) &"")"", """")"
+    Range("A3").Select
+    Selection.FillDown
+    ActiveWindow.ScrollRow = 1090
+    ActiveWindow.ScrollRow = 1082
+    ActiveWindow.ScrollRow = 1073
+    ActiveWindow.ScrollRow = 1063
+    ActiveWindow.ScrollRow = 1052
+    ActiveWindow.ScrollRow = 1043
+    ActiveWindow.ScrollRow = 1029
+    ActiveWindow.ScrollRow = 1017
+    ActiveWindow.ScrollRow = 1005
+    ActiveWindow.ScrollRow = 953
+    ActiveWindow.ScrollRow = 938
+    ActiveWindow.ScrollRow = 871
+    ActiveWindow.ScrollRow = 809
+    ActiveWindow.ScrollRow = 795
+    ActiveWindow.ScrollRow = 783
+    ActiveWindow.ScrollRow = 742
+    ActiveWindow.ScrollRow = 713
+    ActiveWindow.ScrollRow = 566
+    ActiveWindow.ScrollRow = 475
+    ActiveWindow.ScrollRow = 458
+    ActiveWindow.ScrollRow = 364
+    ActiveWindow.ScrollRow = 323
+    ActiveWindow.ScrollRow = 308
+    ActiveWindow.ScrollRow = 296
+    ActiveWindow.ScrollRow = 258
+    ActiveWindow.ScrollRow = 247
+    ActiveWindow.ScrollRow = 236
+    ActiveWindow.ScrollRow = 203
+    ActiveWindow.ScrollRow = 195
+    ActiveWindow.ScrollRow = 189
+    ActiveWindow.ScrollRow = 138
+    ActiveWindow.ScrollRow = 133
+    ActiveWindow.ScrollRow = 68
+    ActiveWindow.ScrollRow = 63
+    ActiveWindow.ScrollRow = 39
+    ActiveWindow.ScrollRow = 27
+    ActiveWindow.ScrollRow = 7
+    ActiveWindow.ScrollRow = 4
+    ActiveWindow.ScrollRow = 1
+    Range("B3").Select
+    ActiveCell.FormulaR1C1 = _
+        "=IF((AND(RC3 <> """", RC4 <> """", RC6 <> """", RC7 <> """", RC8 <> """")), RC3 & ""-"" & INDEX(R5C20:R1004C20, MATCH(RC4,R5C19:R1004C19,0)) & ""-"" & RC5 & ""-"" & RC11 & ""-"" & TEXT(EDATE(RC7,RC8),""yy"") & TEXT(EDATE(RC7,RC8),""mm"") & TEXT(EDATE(RC7,RC8), ""dd"") & ""-"" & TEXT(RC7, ""yy"") & TEXT(RC7,""dd"") & RC6, """")"
+    Range("B3").Select
+    Selection.FillDown
+    ActiveWindow.ScrollRow = 1095
+    ActiveWindow.ScrollRow = 1094
+    ActiveWindow.ScrollRow = 1092
+    ActiveWindow.ScrollRow = 1091
+    ActiveWindow.ScrollRow = 1086
+    ActiveWindow.ScrollRow = 1083
+    ActiveWindow.ScrollRow = 1080
+    ActiveWindow.ScrollRow = 1073
+    ActiveWindow.ScrollRow = 1070
+    ActiveWindow.ScrollRow = 1065
+    ActiveWindow.ScrollRow = 1061
+    ActiveWindow.ScrollRow = 1056
+    ActiveWindow.ScrollRow = 1051
+    ActiveWindow.ScrollRow = 1048
+    ActiveWindow.ScrollRow = 1044
+    ActiveWindow.ScrollRow = 1041
+    ActiveWindow.ScrollRow = 1036
+    ActiveWindow.ScrollRow = 1032
+    ActiveWindow.ScrollRow = 1026
+    ActiveWindow.ScrollRow = 1023
+    ActiveWindow.ScrollRow = 1019
+    ActiveWindow.ScrollRow = 1016
+    ActiveWindow.ScrollRow = 1013
+    ActiveWindow.ScrollRow = 1009
+    ActiveWindow.ScrollRow = 1004
+    ActiveWindow.ScrollRow = 951
+    ActiveWindow.ScrollRow = 942
+    ActiveWindow.ScrollRow = 878
+    ActiveWindow.ScrollRow = 819
+    ActiveWindow.ScrollRow = 790
+    ActiveWindow.ScrollRow = 738
+    ActiveWindow.ScrollRow = 703
+    ActiveWindow.ScrollRow = 566
+    ActiveWindow.ScrollRow = 487
+    ActiveWindow.ScrollRow = 454
+    ActiveWindow.ScrollRow = 376
+    ActiveWindow.ScrollRow = 329
+    ActiveWindow.ScrollRow = 299
+    ActiveWindow.ScrollRow = 259
+    ActiveWindow.ScrollRow = 249
+    ActiveWindow.ScrollRow = 237
+    ActiveWindow.ScrollRow = 224
+    ActiveWindow.ScrollRow = 211
+    ActiveWindow.ScrollRow = 200
+    ActiveWindow.ScrollRow = 189
+    ActiveWindow.ScrollRow = 139
+    ActiveWindow.ScrollRow = 130
+    ActiveWindow.ScrollRow = 72
+    ActiveWindow.ScrollRow = 65
+    ActiveWindow.ScrollRow = 41
+    ActiveWindow.ScrollRow = 27
+    ActiveWindow.ScrollRow = 7
+    ActiveWindow.ScrollRow = 3
+    ActiveWindow.ScrollRow = 1
+End Sub
